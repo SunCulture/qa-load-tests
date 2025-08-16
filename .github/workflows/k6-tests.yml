@@ -9,15 +9,16 @@ on:
 jobs:
   K6-test:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name:  Checkout code
-        uses: actions/checkout@v3
+    - name:  Checkout code
+      uses: actions/checkout@v3
 
-      - name: Run k6-test
-        uses: grafana/k6-action@v0.2.0
-        with:
-        filename: test.js
-       
+    - name: Run k6-test
+      uses: grafana/k6-action@v0.2.0
+
+    - name: Run K6-test
+        
+      run: k6 run test.js
 
       
