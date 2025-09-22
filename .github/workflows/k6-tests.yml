@@ -17,7 +17,7 @@ jobs:
     - name: Run k6-test
       uses: grafana/k6-action@v0.2.0
 
-    - name: Run K6-test
+    - name: Run K6 Test
         
       run: k6 run test.js
 
